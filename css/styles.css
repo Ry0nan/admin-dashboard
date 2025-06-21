@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* main container control */
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-areas:
+    "header  sidebar"
+    "content sidebar"
+    "footer  sidebar";
+}
+
+/* header control */
+header {
+  grid-area: header;
+  background-color: #2546A7;
+  border: 1px solid red;
+  padding: 1rem;
+  color: white;
+}
+
+/* main content control */
+main {
+  grid-area: content;
+  background-color: #E4C4AD;
+  border: 1px solid red;
+  padding: 1rem;
+  color: white;
+}
+
+/* sidebar control */
+aside {
+  grid-area: sidebar;
+  background-color: #13287C;
+  border: 1px solid red;
+  padding: 1rem;
+  color: white;
+}
+
+/* footer control */
+footer {
+  grid-area: footer;
+  background-color: #151415;
+  border: 1px solid red;
+  padding: 1rem;
+  color: white;
+}
