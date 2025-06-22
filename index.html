@@ -6,6 +6,7 @@
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/experimental.css">
 </head>
 <body>
 
@@ -13,18 +14,47 @@
   <div class="container">
     
     <!-- header -->
-    <header>
-      Header Content
+    <header class="header">
+
+      <!-- search bar group -->
+      <div class="search-bar-group">
+        <img src="./assets/svgs/search.svg" alt="search-icon" class="search-icon">
+        <input type="search" placeholder="Search.." />
+      </div>
+
+      <!-- welcome message -->
+      <div class="welcome-message">
+        <img src="./assets/images/ryojii.jpg" alt="github-pfp" class="github-pfp">
+        <h3 class="welcome-heading">
+            Welcome, Ry0nan
+        </h3>
+      </div>
+
+
     </header>
 
     <!-- main content area -->
-    <main>
-      Main Content Area
+    <main class="content-area">
+      <div class="content-container">
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+        <div class="content-card"> </div>
+      </div>
     </main>
 
     <!-- sidebar -->
-    <aside>
-      Sidebar Content
+    <aside class="sidebar">
+      <div class="dashboard-text"> <img src="./assets/svgs/clipboard.svg" alt="clipboard" class="clipboard-icon"> Dashboard </div>
+      <div class="home-text"> <img src="./assets/svgs/house.svg" alt="home" class="home-icon"> Home </div>
+      <div class="profile-text"> <img src="./assets/svgs/person-circle.svg" alt="profile" class="profile-icon"> Profile </div>
+      <div class="projects-text"> <img src="./assets/svgs/pen.svg" alt="projects" class="projects-icon"> Projects </div>
+      <div class="about-me-text"> <img src="./assets/svgs/person-badge.svg" alt="about-me" class="about-me-icon">About Me </div>
     </aside>
 
     <!-- footer -->

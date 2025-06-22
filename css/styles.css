@@ -1,3 +1,4 @@
+/* html control */
 html, body {
   height: 100%;
   margin: 0;
@@ -22,7 +23,6 @@ html, body {
 header {
   grid-area: header;
   background-color: #2546A7;
-  border: 1px solid red;
   padding: 1rem;
   color: white;
 }
@@ -31,7 +31,6 @@ header {
 main {
   grid-area: content;
   background-color: #E4C4AD;
-  border: 1px solid red;
   padding: 1rem;
   color: white;
 }
@@ -40,7 +39,6 @@ main {
 aside {
   grid-area: sidebar;
   background-color: #13287C;
-  border: 1px solid red;
   padding: 1rem;
   color: white;
 }
@@ -49,7 +47,143 @@ aside {
 footer {
   grid-area: footer;
   background-color: #151415;
-  border: 1px solid red;
   padding: 1rem;
   color: white;
 }
+
+/* ---------------------------------------------------- */
+
+/* flex controls */
+header.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------------------------------------------- */
+
+/* assets control */
+
+/* header section */
+
+/* search bar */
+.search-bar-group {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    height: 35px;
+    padding: 0.25rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    background-color: white;
+    gap: 50px;
+}
+
+/* search icon */
+.search-icon {
+    margin-right: 20px;
+    height: 25px;
+    width: 25px;
+}
+
+/* search input */
+.search-bar input[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.welcome-message {
+    display: flex;
+    align-items: center;
+}
+
+/* profile picture */
+.github-pfp {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------- */
+
+/* main content area */
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.content-card {
+    background-color: blue;
+    height: 450px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* sidebar */
+
+aside.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.dashboard-text {
+    display: flex;
+    justify-content: center;
+}
+
+.clipboard-icon {
+    margin-right: 10px;
+}
+
+.home-text {
+    display: flex;
+    justify-content: center;
+}
+
+.home-icon {
+    margin-right: 10px;
+}
+
+.profile-text {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-icon {
+    margin-right: 10px;
+}
+
+.projects-text {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-icon {
+    margin-right: 10px;
+}
+
+.about-me-text {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-icon {
+    margin-right: 10px;
+}
+
+/* ---------------------------------------------------- */
+
