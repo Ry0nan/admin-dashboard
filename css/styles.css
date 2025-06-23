@@ -22,7 +22,7 @@ html, body {
 /* header control */
 header {
   grid-area: header;
-  background-color: #2546A7;
+  background-color: #1F1E1F;
   padding: 1rem;
   color: white;
 }
@@ -30,7 +30,7 @@ header {
 /* main content control */
 main {
   grid-area: content;
-  background-color: #E4C4AD;
+  background-color: #2A282A;
   padding: 1rem;
   color: white;
 }
@@ -38,7 +38,7 @@ main {
 /* sidebar control */
 aside {
   grid-area: sidebar;
-  background-color: #13287C;
+  background-color: #151415;
   padding: 1rem;
   color: white;
 }
@@ -46,7 +46,7 @@ aside {
 /* footer control */
 footer {
   grid-area: footer;
-  background-color: #151415;
+  background-color: #1F1E1F;
   padding: 1rem;
   color: white;
 }
@@ -54,10 +54,10 @@ footer {
 /* ---------------------------------------------------- */
 
 /* flex controls */
-header.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ---------------------------------------------------- */
@@ -68,49 +68,49 @@ header.header{
 
 /* search bar */
 .search-bar-group {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    max-width: 300px;
-    height: 35px;
-    padding: 0.25rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 999px;
-    background-color: white;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  height: 35px;
+  padding: 0.25rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background-color: white;
+  gap: 50px;
 }
 
 /* search icon */
 .search-icon {
-    margin-right: 20px;
-    height: 25px;
-    width: 25px;
+  margin-right: 20px;
+  height: 25px;
+  width: 25px;
 }
 
 /* search input */
 .search-bar input[type="search"] {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    background-color: transparent;
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
 }
 
 .welcome-message {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* profile picture */
 .github-pfp {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /* ---------------------------------------------------- */
@@ -118,72 +118,77 @@ header.header{
 /* main content area */
 
 .content-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
 }
 
 .content-card {
-    background-color: blue;
-    height: 450px;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #0E4581;
+  height: 350px;
+  width: 450px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: ;
+}
+
+.card-header {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.card-middle {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  padding: 30px;
+  background-color: #3C5DE2;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 20%;
+  width: 100%;
+}
+
+.filler {
+    height: 35px;
+    width: 35px;
 }
 
 /* sidebar */
 
 aside.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
 }
 
-.dashboard-text {
-    display: flex;
-    justify-content: center;
+.sidebar-item {
+  display: flex;
+  justify-content: center;
 }
 
-.clipboard-icon {
-    margin-right: 10px;
-}
-
-.home-text {
-    display: flex;
-    justify-content: center;
-}
-
-.home-icon {
-    margin-right: 10px;
-}
-
-.profile-text {
-    display: flex;
-    justify-content: center;
-}
-
-.profile-icon {
-    margin-right: 10px;
-}
-
-.projects-text {
-    display: flex;
-    justify-content: center;
-}
-
-.projects-icon {
-    margin-right: 10px;
-}
-
-.about-me-text {
-    display: flex;
-    justify-content: center;
-}
-
-.about-me-icon {
-    margin-right: 10px;
+.sidebar-icon {
+  margin-right: 10px;
 }
 
 /* ---------------------------------------------------- */
-
